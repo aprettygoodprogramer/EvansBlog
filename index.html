@@ -1,63 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Cool Website</title>
+    <title>Evans Blog</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap">
     <style>
         body {
-            background-color: #1e1e1e;
-            color: #ffffff;
+            background-color: #252525;
+            color: #93b16d;
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 20px;
             text-align: center;
+            animation: fadeInUp 1s ease-out;
         }
 
         h1 {
             font-size: 2.5em;
             color: #ff000070;
-            text-shadow: 2px 2px 4px #ff0000;
+            text-shadow: 2px 2px 4px #000000;
+            animation: fadeInUp 1s ease-out;
+
+        }
+
+        a
+        {
+            font-size: small;
+            color: aqua;
             animation: fadeInUp 1s ease-out;
         }
-
-        p {
-            font-size: 1.1em;
-            line-height: 1.6;
-            animation: fadeInUp 1s ease-out 0.5s;
-        }
-
-        strong {
-            color: #ffcc00;
-        }
-        
-        em {
-            color: #88c0d0;
-        }
-
-        .glow-button {
-            background-color: #ff6347;
-            color: rgb(0, 0, 0);
-            border: none;
-            padding: 10px 30px;
-            font-size: 1em;
-            font-weight: bold;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: 0.3s;
-            box-shadow: 0 0 8px rgba(255, 99, 71, 0.8), 0 0 15px rgba(255, 99, 71, 0.5);
-        }
-
-        .glow-button:hover {
-            background-color: #ffd700;
-            color: black;
-            box-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 0 0 25px rgba(255, 215, 0, 0.6);
-            transform: scale(1.1);
-        }
-        .inputBox
-        {
-            background-color: #00dbb7;
-        }
-
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -68,32 +38,12 @@
                 transform: translateY(0);
             }
         }
+        
     </style>
 </head>
 <body>
-    <h1>Welcome to My Cool Website!</h1>
-    <p>This is my first EVER webpage.</p>
-    <p>I am not sure what I am going to put on this website.
-        <strong>THIS TEXT IS BOLD</strong> <em>this text is italic</em>.
-    </p>
-    <button class="glow-button">Click Me!</button>
-
-</body>
-<script>
-    const currentDate = new Date();
-    
-    const dateString = currentDate.toDateString();
-    
-    const dateParagraph = document.createElement("p");
-    
-    dateParagraph.textContent = "Today's date is: " + dateString;
-    
-    document.body.appendChild(dateParagraph);
-</script>
-<label for="fname">Name:</label>
-<input type="text" class="inputBox "id="lname" name="lname"><br><br>
-<label for="lname">Level Of Sigmanest:</label>
-<input type="text" class="inputBox "id="lname" name="lname"><br><br>
-<button class="glow-button">Submit!</button>
-<p> Enter for free NOTHING!!!!!!
+    <h1>Evans Blog</h1>
+    <p>Hi! I’m Evan D. an 8th grader with a big passion for programming and game development. I’ve already created several games and projects, and every new one feels like an adventure! Programming isn’t just a hobby for me—it’s something I genuinely enjoy and want to keep mastering. When I’m not coding, I’m probably gaming, exploring new ideas, or diving into something tech-related. Through my blog, I share my projects, thoughts on game development, and tips I’ve picked up along the way. Thanks for stopping by, and I hope you enjoy exploring my work!.</p>
+    <a href="MyGames.html">Here are my games</a>
+    <a href="devBlog.html">Here is My Blog</a>
 </html>
